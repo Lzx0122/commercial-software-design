@@ -120,7 +120,7 @@ namespace _52屆winform
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Name = "UserControl_ChangePassword";
-            this.Size = new System.Drawing.Size(665, 385);
+            this.Size = new System.Drawing.Size(766, 383);
             this.Load += new System.EventHandler(this.UserControl_ChangePassword_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

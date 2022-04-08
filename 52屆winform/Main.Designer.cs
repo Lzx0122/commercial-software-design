@@ -36,10 +36,10 @@ namespace _52屆winform
             // 
             // tabControl1
             // 
-            this.tabControl1.Location = new System.Drawing.Point(12, 104);
+            this.tabControl1.Location = new System.Drawing.Point(12, 89);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(776, 334);
+            this.tabControl1.Size = new System.Drawing.Size(915, 499);
             this.tabControl1.TabIndex = 0;
             // 
             // label1
@@ -64,7 +64,7 @@ namespace _52屆winform
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(939, 600);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.tabControl1);

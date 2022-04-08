@@ -116,7 +116,7 @@ namespace _52屆winform
 
         }
 
-        public DataTable GetDataTable(string strSql, string strDataTableName)
+        public DataTable GetDataTable(string strSql)
         {
             cmd = new SqlCommand();
             SqlDataAdapter dA;
@@ -131,7 +131,25 @@ namespace _52屆winform
 
 
         }
+
+
+        public string GetSQLvalue(string strSql,string strTableName) {
+            SqlDataReader connReader;
+            cmd = new SqlCommand();
+            openConn();
+            cmd.CommandText = strSql;
+            cmd.Connection = conn;
+            connReader = cmd.ExecuteReader();
+            while (connReader.Read())
+            {
+                return connReader[strTableName].ToString();
+            }
+
+            return "";
         
+        
+        
+        }
 
 
     }

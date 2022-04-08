@@ -39,13 +39,14 @@ namespace _52屆winform
         public void tabfun() {
             tabPages = new TabPage[perArrayList.Length];
             userControls = new UserControl[perArrayList.Length];
-            for (int i = 0; i<1; i++) {
+            for (int i = 0; i<perArrayList.Length; i++) {
                 tabPages[i] = new TabPage();
                 if (perArrayList[i].Equals("密碼變更")) {
                     userControls[i] = new UserControl_ChangePassword(lib);
-                    userControls[i].Name = " UserControl_ChangePassword";
-
-
+                    userControls[i].Name = "UserControl_ChangePassword";
+                } else if (perArrayList[i].Equals("帳號管理")) {
+                    userControls[i] = new UserControl_user_account(lib);
+                    userControls[i].Name = "UserControl_user_account";
 
                 }
                 userControls[i].Location = new System.Drawing.Point(6, 5);
