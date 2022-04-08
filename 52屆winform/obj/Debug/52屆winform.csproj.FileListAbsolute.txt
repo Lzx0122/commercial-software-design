@@ -1,0 +1,12 @@
+C:\Users\user\Desktop\52屆\52屆winform\52屆winform\bin\Debug\52屆winform.exe.config
+C:\Users\user\Desktop\52屆\52屆winform\52屆winform\bin\Debug\52屆winform.exe
+C:\Users\user\Desktop\52屆\52屆winform\52屆winform\bin\Debug\52屆winform.pdb
+C:\Users\user\Desktop\52屆\52屆winform\52屆winform\obj\Debug\52屆winform.csproj.AssemblyReference.cache
+C:\Users\user\Desktop\52屆\52屆winform\52屆winform\obj\Debug\_52屆winform.Properties.Resources.resources
+C:\Users\user\Desktop\52屆\52屆winform\52屆winform\obj\Debug\52屆winform.csproj.GenerateResource.cache
+C:\Users\user\Desktop\52屆\52屆winform\52屆winform\obj\Debug\52屆winform.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\52屆\52屆winform\52屆winform\obj\Debug\52屆winform.exe
+C:\Users\user\Desktop\52屆\52屆winform\52屆winform\obj\Debug\52屆winform.pdb
+C:\Users\user\Desktop\52屆\52屆winform\52屆winform\obj\Debug\_52屆winform.Login.resources
+C:\Users\user\Desktop\52屆\52屆winform\52屆winform\obj\Debug\_52屆winform.UserControl_ChangePassword.resources
+C:\Users\user\Desktop\52屆\52屆winform\52屆winform\obj\Debug\_52屆winform.Main.resources

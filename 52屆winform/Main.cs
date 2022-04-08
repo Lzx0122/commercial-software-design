@@ -1,0 +1,73 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace _52屆winform
+{
+    public partial class Main : Form
+    {
+        private C_SQLServerLib lib;
+        public String[] perArrayList;
+        public TabPage[] tabPages;
+        public UserControl[] userControls;
+
+        public Main(C_SQLServerLib e)
+        {
+            
+            InitializeComponent();
+            lib = e;
+        }
+        
+        private void Form1_Load(object sender, EventArgs e)
+        {
+           
+            label1.Text = label1.Text + lib.UserName;
+            label2.Text = label2.Text + lib.per;
+            perArrayList = lib.per.ToString().Split(',');
+            tabfun();
+
+           
+            
+        }
+
+        public void tabfun() {
+            tabPages = new TabPage[perArrayList.Length];
+            userControls = new UserControl[perArrayList.Length];
+            for (int i = 0; i<1; i++) {
+                tabPages[i] = new TabPage();
+                if (perArrayList[i].Equals("密碼變更")) {
+                    userControls[i] = new UserControl_ChangePassword(lib);
+                    userControls[i].Name = " UserControl_ChangePassword";
+
+
+
+                }
+                userControls[i].Location = new System.Drawing.Point(6, 5);
+                tabPages[i].Controls.Add(userControls[i]);
+                tabPages[i].Location = new System.Drawing.Point(4,22);
+                tabPages[i].Name = "tabPage" + userControls[i].Name;
+                tabPages[i].Padding = new System.Windows.Forms.Padding(3);
+                tabPages[i].Size = new System.Drawing.Size(938,451);
+                tabPages[i].TabIndex = i;
+                tabPages[i].Text = perArrayList[i];
+                tabPages[i].UseVisualStyleBackColor = true;
+                tabPages[i].SuspendLayout();
+                tabPages[i].ResumeLayout(false);
+                this.tabControl1.Controls.Add(tabPages[i]);
+           
+
+
+
+
+            }
+        
+        
+        }
+    }
+}
