@@ -41,7 +41,7 @@ namespace _52屆winform
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(148, 176);
+            this.textBox1.Location = new System.Drawing.Point(108, 29);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 22);
             this.textBox1.TabIndex = 0;
@@ -49,7 +49,7 @@ namespace _52屆winform
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(148, 204);
+            this.textBox2.Location = new System.Drawing.Point(108, 57);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(100, 22);
             this.textBox2.TabIndex = 1;
@@ -58,7 +58,7 @@ namespace _52屆winform
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(90, 179);
+            this.label1.Location = new System.Drawing.Point(50, 32);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(29, 12);
             this.label1.TabIndex = 2;
@@ -67,7 +67,7 @@ namespace _52屆winform
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(90, 207);
+            this.label2.Location = new System.Drawing.Point(50, 60);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(29, 12);
             this.label2.TabIndex = 3;
@@ -75,7 +75,7 @@ namespace _52屆winform
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(92, 238);
+            this.button1.Location = new System.Drawing.Point(52, 91);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 4;
@@ -85,7 +85,7 @@ namespace _52屆winform
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(12, 149);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(324, 158);
             this.pictureBox1.TabIndex = 5;
@@ -93,7 +93,7 @@ namespace _52屆winform
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(173, 238);
+            this.button2.Location = new System.Drawing.Point(133, 91);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 6;
@@ -105,7 +105,7 @@ namespace _52屆winform
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(348, 266);
+            this.ClientSize = new System.Drawing.Size(258, 140);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button1);

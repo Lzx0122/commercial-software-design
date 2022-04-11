@@ -12,6 +12,21 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -62,6 +77,30 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserControl_Ship_equipment.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl_Ship_equipment.Designer.cs">
+      <DependentUpon>UserControl_Ship_equipment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl_Ship_navigation_inspection.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl_Ship_navigation_inspection.Designer.cs">
+      <DependentUpon>UserControl_Ship_navigation_inspection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl_shipping_manage .cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl_shipping_manage .Designer.cs">
+      <DependentUpon>UserControl_shipping_manage .cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl_API.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl_API.Designer.cs">
+      <DependentUpon>UserControl_API.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControl_user_account.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -90,8 +129,20 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="UserControl_API.resx">
+      <DependentUpon>UserControl_API.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControl_ChangePassword.resx">
       <DependentUpon>UserControl_ChangePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl_shipping_manage .resx">
+      <DependentUpon>UserControl_shipping_manage .cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl_Ship_equipment.resx">
+      <DependentUpon>UserControl_Ship_equipment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl_Ship_navigation_inspection.resx">
+      <DependentUpon>UserControl_Ship_navigation_inspection.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControl_user_account.resx">
       <DependentUpon>UserControl_user_account.cs</DependentUpon>
@@ -114,6 +165,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\a10a %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

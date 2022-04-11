@@ -52,9 +52,7 @@ namespace _52屆winform
             catch (Exception ex) {
                 return false;
             }
-
             return false;
-
         }
         public bool perfun()
         {
@@ -70,7 +68,7 @@ namespace _52屆winform
                 while (connReader.Read())
                 {
                     per = connReader["權限說明"].ToString();
-
+                    closeConn();
                     return true;
                 }
             }
@@ -89,14 +87,11 @@ namespace _52屆winform
             cmd.Connection = conn;
             if (cmd.ExecuteNonQuery() == 0) {
                 MessageBox.Show("修改失敗");
-
                 return false;
-               
             }
             cmd.ExecuteNonQuery();
             MessageBox.Show("已成功修改密碼");
             return true;
-             
 
         }
       
@@ -104,7 +99,6 @@ namespace _52屆winform
         public DataSet GetDataSet(string strSql, string strDataTableName) {
             cmd = new SqlCommand();
             SqlDataAdapter dA;
-
             openConn();
             cmd.CommandText = strSql;
             cmd.Connection = conn;
@@ -112,15 +106,12 @@ namespace _52屆winform
             DataSet data = new DataSet();
             dA.Fill(data, strDataTableName);
             return data;
-
-
         }
 
         public DataTable GetDataTable(string strSql)
         {
             cmd = new SqlCommand();
             SqlDataAdapter dA;
-
             openConn();
             cmd.CommandText = strSql;
             cmd.Connection = conn;
@@ -128,8 +119,6 @@ namespace _52屆winform
             DataTable data = new DataTable();
             dA.Fill(data);
             return data;
-
-
         }
 
 
@@ -140,15 +129,11 @@ namespace _52屆winform
             cmd.CommandText = strSql;
             cmd.Connection = conn;
             connReader = cmd.ExecuteReader();
-            while (connReader.Read())
+            if (connReader.Read())
             {
                 return connReader[strTableName].ToString();
             }
-
-            return "";
-        
-        
-        
+            return null;
         }
 
 

@@ -15,7 +15,7 @@ namespace _52屆winform
         void  connfun()
         {
 
-            string connStr = "data source=192.168.0.104,1433; database=GSMS;user id=sa;password=0000";
+            string connStr = "Data Source=192.168.0.104,1433;database=GSMS;User ID=sa;password=0000";
             conn = new SqlConnection(connStr);
 
 
@@ -26,7 +26,7 @@ namespace _52屆winform
          
         }
 
-        void closeConn() {
+        public void closeConn() {
 
 
             conn.Close();

@@ -15,6 +15,7 @@ namespace _52屆winform
         public Login()
         {
             InitializeComponent();
+            this.Text = "登入";
         }
 
         private void button1_Click(object sender, EventArgs e)

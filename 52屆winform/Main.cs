@@ -18,10 +18,10 @@ namespace _52屆winform
         public UserControl[] userControls;
 
         public Main(C_SQLServerLib e)
-        {
-            
+        {       
             InitializeComponent();
             lib = e;
+            this.Text = "主畫面";
         }
         
         private void Form1_Load(object sender, EventArgs e)
@@ -47,8 +47,28 @@ namespace _52屆winform
                 } else if (perArrayList[i].Equals("帳號管理")) {
                     userControls[i] = new UserControl_user_account(lib);
                     userControls[i].Name = "UserControl_user_account";
-
                 }
+                else if (perArrayList[i].Equals("天氣資訊API"))
+                {
+                    userControls[i] = new UserControl_API(lib);
+                    userControls[i].Name = "UserControl_API";
+                }
+                else if (perArrayList[i].Equals("船舶管理"))
+                {
+                    userControls[i] = new UserControl1(lib);
+                    userControls[i].Name = "UserControl1";
+                }
+                else if (perArrayList[i].Equals("船舶航行檢視"))
+                {
+                    userControls[i] = new UserControl_Ship_navigation_inspection(lib);
+                    userControls[i].Name = "UserControl_Ship_navigation_inspection";
+                }
+                else if (perArrayList[i].Equals("船舶設備管理維護"))
+                {
+                    userControls[i] = new UserControl_Ship_equipment(lib);
+                    userControls[i].Name = "UserControl_Ship_equipment";
+                }
+
                 userControls[i].Location = new System.Drawing.Point(6, 5);
                 tabPages[i].Controls.Add(userControls[i]);
                 tabPages[i].Location = new System.Drawing.Point(4,22);
