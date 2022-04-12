@@ -37,14 +37,16 @@
             this.label4 = new System.Windows.Forms.Label();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.button3 = new System.Windows.Forms.Button();
+            this.船種ID_combobox = new System.Windows.Forms.ComboBox();
+            this.船公司ID_combobox = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -121,13 +123,6 @@
             this.label5.TabIndex = 8;
             this.label5.Text = "船種";
             // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(768, 27);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 22);
-            this.textBox5.TabIndex = 9;
-            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -137,17 +132,10 @@
             this.label6.TabIndex = 10;
             this.label6.Text = "船公司";
             // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(81, 81);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(100, 22);
-            this.textBox6.TabIndex = 12;
-            // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(199, 84);
+            this.label7.Location = new System.Drawing.Point(208, 84);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(29, 12);
             this.label7.TabIndex = 13;
@@ -190,18 +178,54 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // textBox8
+            // 
+            this.textBox8.Location = new System.Drawing.Point(674, 80);
+            this.textBox8.Name = "textBox8";
+            this.textBox8.Size = new System.Drawing.Size(100, 22);
+            this.textBox8.TabIndex = 18;
+            this.textBox8.TextChanged += new System.EventHandler(this.textBox8_TextChanged);
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(465, 110);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.TabIndex = 19;
+            this.button3.Text = "修改";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // 船種ID_combobox
+            // 
+            this.船種ID_combobox.FormattingEnabled = true;
+            this.船種ID_combobox.Location = new System.Drawing.Point(768, 29);
+            this.船種ID_combobox.Name = "船種ID_combobox";
+            this.船種ID_combobox.Size = new System.Drawing.Size(121, 20);
+            this.船種ID_combobox.TabIndex = 20;
+            // 
+            // 船公司ID_combobox
+            // 
+            this.船公司ID_combobox.FormattingEnabled = true;
+            this.船公司ID_combobox.Location = new System.Drawing.Point(81, 80);
+            this.船公司ID_combobox.Name = "船公司ID_combobox";
+            this.船公司ID_combobox.Size = new System.Drawing.Size(121, 20);
+            this.船公司ID_combobox.TabIndex = 21;
+            // 
             // UserControl1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.船公司ID_combobox);
+            this.Controls.Add(this.船種ID_combobox);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.textBox8);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.textBox7);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.textBox6);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.textBox5);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.label4);
@@ -231,13 +255,15 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.ComboBox 船種ID_combobox;
+        private System.Windows.Forms.ComboBox 船公司ID_combobox;
     }
 }

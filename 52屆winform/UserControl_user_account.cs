@@ -15,9 +15,10 @@ namespace _52屆winform
     {
 
         private C_SQLServerLib lib;
-        C_SQLconn conclass = new C_SQLconn();
-        SqlDataReader connReader;
-        SqlCommand cmd;
+    
+ 
+     
+        string sql = "";
 
         public UserControl_user_account(C_SQLServerLib e)
         {
@@ -35,15 +36,14 @@ namespace _52屆winform
             comboBox1.DataSource = lib.GetDataTable("select 權限說明 from 權限");
             comboBox1.DisplayMember = "權限";
             comboBox1.ValueMember = "權限說明";
-
-            comboBox2.DataSource = lib.GetDataTable("select 職業 from 職業 where { fn LENGTH(職業ID) } = 7");
+            MessageBox.Show(comboBox1.SelectedValue.ToString());
+            comboBox2.DataSource = lib.GetDataTable("select * from 職業 where { fn LENGTH(職業ID) } = 7");
             comboBox2.DisplayMember = "職業";
-            comboBox2.ValueMember = "職業";
+            comboBox2.ValueMember = "職業ID";
+            MessageBox.Show(comboBox2.SelectedValue.ToString());
 
-          
             comboBox3.DataSource = lib.GetDataTable("select IMO from 船舶基本資料");
-
-            comboBox3.DisplayMember = "船舶基本資料";
+            comboBox3.DisplayMember = "IMO";
             comboBox3.ValueMember = "IMO";
         }
 
@@ -69,7 +69,7 @@ namespace _52屆winform
                         textBox2.Text = dataGridView1.SelectedRows[0].Cells[1].Value.ToString();
                         textBox3.Text = dataGridView1.SelectedRows[0].Cells[2].Value.ToString();
                         textBox4.Text = dataGridView1.SelectedRows[0].Cells[3].Value.ToString();
-                        string dateTime= DateTime.Parse( dataGridView1.SelectedRows[0].Cells[4].Value.ToString()).ToString("yyyy/MM/dd");
+                        string dateTime= DateTime.Parse( dataGridView1.SelectedRows[0].Cells[4].Value.ToString()).ToString("yyyy-MM-dd");
                         textBox7.Text = dateTime;
                        
                         textBox5.Text = dataGridView1.SelectedRows[0].Cells[6].Value.ToString();
@@ -92,11 +92,11 @@ namespace _52屆winform
            
 
             textBox10.Text = lib.GetSQLvalue($"select 職業 from 職業 where 職業ID=" +
-                $"(select 上層ID from 職業 where 職業='{comboBox2.SelectedValue as string}')", "職業");
+                $"(select 上層ID from 職業 where 職業='{comboBox2.Text as string}')", "職業");
 
             textBox9.Text = lib.GetSQLvalue($"select 職業 from 職業 where 職業ID=" +
                 $"(select 上層ID from 職業 where 職業ID=" +
-                $"(select 上層ID from 職業 where 職業='{comboBox2.SelectedValue as string}'))", "職業");
+                $"(select 上層ID from 職業 where 職業='{comboBox2.Text as string}'))", "職業");
 
         }
 
@@ -113,17 +113,17 @@ namespace _52屆winform
             if (result == System.Windows.Forms.DialogResult.Yes)
             {
                 if (isNull == null) {
-                    cmd = new SqlCommand();
-                    conclass.openConn();
-                  
-                    cmd.CommandText = $"insert into 船員資料 (使用者ID,密碼,姓名,國家,出生日期,職業ID,狀態,IMO,權限ID) " +
+              
+                    sql = $"insert into 船員資料 (使用者ID,密碼,姓名,國家,出生日期,職業ID,狀態,IMO,權限ID) " +
                         $"select '{textBox1.Text}','{textBox2.Text}','{textBox3.Text}','{textBox4.Text}','{textBox7.Text}'" +
-                        $",(select 職業ID from 職業 where 職業='{comboBox2.Text}'),'{textBox5.Text}','{comboBox3.Text}'," +
+                        $",'{comboBox2.SelectedValue.ToString()}','{textBox5.Text}','{comboBox3.Text}'," +
                         $"(select 權限ID from 權限 where 權限說明='{comboBox1.Text}')";
-                    cmd.Connection = conclass.conn;
-                    cmd.ExecuteNonQuery();
-                    reloading();
-                    MessageBox.Show("修改完成","訊息");
+                    if (lib.startExecuteNonQuery(sql)) {
+                        reloading();
+                        MessageBox.Show("修改完成", "訊息");
+
+                    }
+                  
                 }
                 else {
                     MessageBox.Show($"{textBox1.Text}此使用者已被註冊","錯誤");
@@ -138,12 +138,13 @@ namespace _52屆winform
         {
             try
             {
-                cmd = new SqlCommand();
-                conclass.openConn();
-                cmd.CommandText = $"DELETE FROM 船員資料 WHERE 使用者ID='{textBox1.Text}' ";
-                cmd.Connection = conclass.conn;
-                cmd.ExecuteNonQuery();
-                reloading();
+            
+                sql = $"DELETE FROM 船員資料 WHERE 使用者ID='{textBox1.Text}' ";
+             
+                if (lib.startExecuteNonQuery(sql)) {
+                    reloading();                
+                }
+                
             }catch (Exception ex) {
               
             }
@@ -165,10 +166,8 @@ namespace _52屆winform
             {
                 string isNull = lib.GetSQLvalue($"select 使用者ID from 船員資料 where 使用者ID='{textBox1.Text}'", "使用者ID");
                 if (!(isNull == null))
-                {
-                    cmd = new SqlCommand();
-                    conclass.openConn();
-                    cmd.CommandText = $"UPDATE 船員資料 SET 密碼='{textBox2.Text}'," +
+                {  
+                    sql =$"UPDATE 船員資料 SET 密碼='{textBox2.Text}'," +
                         $"姓名='{textBox3.Text}'," +
                         $"國家='{textBox4.Text}'," +
                         $"出生日期='{textBox7.Text}'," +
@@ -177,9 +176,12 @@ namespace _52屆winform
                         $"IMO='{comboBox3.Text}'," +
                         $"權限ID=(select 權限ID from 權限 where 權限說明='{comboBox1.Text}') " +
                         $"WHERE 使用者ID='{textBox1.Text}'";
-                    cmd.Connection = conclass.conn;
-                    cmd.ExecuteNonQuery();
-                    reloading();
+                    if (lib.startExecuteNonQuery(sql)) {
+
+                        MessageBox.Show($"修改成功");
+                        reloading();
+                    }
+                   
 
                 }
                 else {
@@ -198,17 +200,25 @@ namespace _52屆winform
         {
             dataGridView1.DataSource = lib.GetDataSet("select 使用者ID,密碼,姓名,國家,出生日期,職業,狀態,IMO,權限說明  from 船員資料" +
 " inner join 權限 on 船員資料.權限ID = 權限.權限ID" +
-" inner join 職業 on 船員資料.職業ID = 職業.職業ID "+
-$"WHERE 使用者ID like '%{textBox6.Text}%'"+
-$"or 密碼 like '%{textBox6.Text}%'"+
-$"or 姓名 like '%{textBox6.Text}%'"+
-$"or 國家 like '%{textBox6.Text}%'"+
-$"or 出生日期 like '%{textBox6.Text}%'"+
-$"or 職業 like '%{textBox6.Text}%'"+
-$"or 狀態 like '%{textBox6.Text}%'"+
-$"or IMO like '%{textBox6.Text}%'"+
+" inner join 職業 on 船員資料.職業ID = 職業.職業ID " +
+$"WHERE 使用者ID like '%{textBox6.Text}%'" +
+$"or 密碼 like '%{textBox6.Text}%'" +
+$"or 姓名 like '%{textBox6.Text}%'" +
+$"or 國家 like '%{textBox6.Text}%'" +
+$"or 出生日期 like '%{textBox6.Text}%'" +
+$"or 職業 like '%{textBox6.Text}%'" +
+$"or 狀態 like '%{textBox6.Text}%'" +
+$"or IMO like '%{textBox6.Text}%'" +
 $"or 權限說明 like '%{textBox6.Text}%'"
 , "船員資料").Tables["船員資料"];
+
+
+
+        }
+
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

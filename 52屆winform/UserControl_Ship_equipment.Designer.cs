@@ -32,14 +32,31 @@
             // 
             // UserControl_Ship_equipment
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Name = "UserControl_Ship_equipment";
-            this.Load += new System.EventHandler(this.UserControl_Ship_equipment_Load);
+            this.Load += new System.EventHandler(this.UserControl_Ship_equipment_Load_2);
             this.ResumeLayout(false);
 
         }
 
         #endregion
+
+        private System.Windows.Forms.ComboBox 港口名稱_combobox;
+        private System.Windows.Forms.ComboBox 船種ID_combobox;
+        private System.Windows.Forms.Button updata;
+        private System.Windows.Forms.TextBox 搜尋;
+        private System.Windows.Forms.Button delete;
+        private System.Windows.Forms.Button add;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.TextBox 時間;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox 狀態;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox 航線名稱;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox IMO_combobox;
+        private System.Windows.Forms.Label label1;
     }
 }

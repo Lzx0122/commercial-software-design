@@ -35,6 +35,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Name = "UserControl_Ship_navigation_inspection";
+            this.Size = new System.Drawing.Size(899, 466);
             this.Load += new System.EventHandler(this.UserControl_Ship_navigation_inspection_Load);
             this.ResumeLayout(false);
 

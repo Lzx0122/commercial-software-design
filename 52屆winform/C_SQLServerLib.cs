@@ -136,6 +136,24 @@ namespace _52屆winform
             return null;
         }
 
+        public bool startExecuteNonQuery(string sql) {
+            try
+            {
+                cmd = new SqlCommand();
+                openConn();
+                cmd.CommandText = sql;
+                cmd.Connection = conn;
+                cmd.ExecuteNonQuery();
+                return true;
+            }
+            catch (Exception ex) { 
+                return false;
+            }
+         
+
+
+            return false;
+        }
 
     }
 }
