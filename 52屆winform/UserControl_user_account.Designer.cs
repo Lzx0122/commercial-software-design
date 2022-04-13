@@ -67,6 +67,7 @@
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(893, 324);
             this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             this.dataGridView1.SelectionChanged += new System.EventHandler(this.dataGridView1_SelectionChanged);
             // 
             // label1
@@ -113,6 +114,7 @@
             this.label5.Size = new System.Drawing.Size(53, 12);
             this.label5.TabIndex = 5;
             this.label5.Text = "出生日期";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label6
             // 
@@ -122,6 +124,7 @@
             this.label6.Size = new System.Drawing.Size(29, 12);
             this.label6.TabIndex = 6;
             this.label6.Text = "狀態";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // label7
             // 
@@ -131,6 +134,7 @@
             this.label7.Size = new System.Drawing.Size(27, 12);
             this.label7.TabIndex = 7;
             this.label7.Text = "IMO";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // label8
             // 
@@ -140,6 +144,7 @@
             this.label8.Size = new System.Drawing.Size(29, 12);
             this.label8.TabIndex = 8;
             this.label8.Text = "權限";
+            this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // textBox1
             // 
@@ -175,6 +180,7 @@
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(53, 22);
             this.textBox5.TabIndex = 13;
+            this.textBox5.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
             // 
             // label9
             // 
@@ -184,6 +190,7 @@
             this.label9.Size = new System.Drawing.Size(29, 12);
             this.label9.TabIndex = 17;
             this.label9.Text = "部門";
+            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // label10
             // 
@@ -193,6 +200,7 @@
             this.label10.Size = new System.Drawing.Size(29, 12);
             this.label10.TabIndex = 18;
             this.label10.Text = "職業";
+            this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
             // label11
             // 
@@ -202,6 +210,7 @@
             this.label11.Size = new System.Drawing.Size(41, 12);
             this.label11.TabIndex = 19;
             this.label11.Text = "部職員";
+            this.label11.Click += new System.EventHandler(this.label11_Click);
             // 
             // textBox9
             // 
@@ -210,6 +219,7 @@
             this.textBox9.Name = "textBox9";
             this.textBox9.Size = new System.Drawing.Size(97, 22);
             this.textBox9.TabIndex = 20;
+            this.textBox9.TextChanged += new System.EventHandler(this.textBox9_TextChanged);
             // 
             // textBox10
             // 
@@ -218,6 +228,7 @@
             this.textBox10.Name = "textBox10";
             this.textBox10.Size = new System.Drawing.Size(97, 22);
             this.textBox10.TabIndex = 21;
+            this.textBox10.TextChanged += new System.EventHandler(this.textBox10_TextChanged);
             // 
             // comboBox1
             // 
@@ -226,6 +237,7 @@
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 20);
             this.comboBox1.TabIndex = 23;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // comboBox2
             // 
@@ -283,6 +295,7 @@
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(121, 20);
             this.comboBox3.TabIndex = 30;
+            this.comboBox3.SelectedIndexChanged += new System.EventHandler(this.comboBox3_SelectedIndexChanged);
             // 
             // textBox6
             // 
@@ -300,6 +313,7 @@
             this.label12.Size = new System.Drawing.Size(29, 12);
             this.label12.TabIndex = 32;
             this.label12.Text = "查詢";
+            this.label12.Click += new System.EventHandler(this.label12_Click);
             // 
             // UserControl_user_account
             // 

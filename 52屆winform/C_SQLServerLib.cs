@@ -16,8 +16,11 @@ namespace _52屆winform
         public string UserID = "";
         public string password = "";
         public string UserName = "";
-        public string perID = "";
-        public string IMO = "";
+
+        public static string perID = "";
+
+
+        public static string IMO = "";
         public string per = "";
 
         public bool vUserLogin() {
@@ -97,15 +100,19 @@ namespace _52屆winform
       
 
         public DataSet GetDataSet(string strSql, string strDataTableName) {
-            cmd = new SqlCommand();
-            SqlDataAdapter dA;
-            openConn();
-            cmd.CommandText = strSql;
-            cmd.Connection = conn;
-            dA = new SqlDataAdapter(cmd);
-            DataSet data = new DataSet();
-            dA.Fill(data, strDataTableName);
-            return data;
+           
+
+                cmd = new SqlCommand();
+                SqlDataAdapter dA;
+                openConn();
+                cmd.CommandText = strSql;
+                cmd.Connection = conn;
+                dA = new SqlDataAdapter(cmd);
+                DataSet data = new DataSet();
+                dA.Fill(data, strDataTableName);
+                return data;
+         
+           
         }
 
         public DataTable GetDataTable(string strSql)

@@ -54,7 +54,6 @@
             this.IMO_combobox.Name = "IMO_combobox";
             this.IMO_combobox.Size = new System.Drawing.Size(121, 20);
             this.IMO_combobox.TabIndex = 40;
-          
             // 
             // 港口名稱_combobox
             // 
@@ -184,7 +183,7 @@
             // 
             this.時間.Location = new System.Drawing.Point(75, 69);
             this.時間.Name = "時間";
-            this.時間.Size = new System.Drawing.Size(100, 22);
+            this.時間.Size = new System.Drawing.Size(150, 22);
             this.時間.TabIndex = 44;
             // 
             // UserControl_Ship_navigation_inspection

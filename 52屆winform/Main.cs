@@ -65,8 +65,8 @@ namespace _52屆winform
                 }
                 else if (perArrayList[i].Equals("船舶設備管理維護"))
                 {
-                    userControls[i] = new UserControl_Ship_equipment(lib);
-                    userControls[i].Name = "UserControl_Ship_equipment";
+                    userControls[i] = new UserControl_船舶設備維護管理(lib);
+                    userControls[i].Name = "UserControl_船舶設備維護管理";
                 }
 
                 userControls[i].Location = new System.Drawing.Point(6, 5);

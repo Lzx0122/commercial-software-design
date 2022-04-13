@@ -53,11 +53,8 @@ namespace _52屆winform
                         str = dataGridView1.SelectedRows[0].Cells[3].Value.ToString();
                         index = 港口名稱_combobox.FindString(str);
                         港口名稱_combobox.SelectedIndex = index;
-
                         航線名稱.Text = dataGridView1.SelectedRows[0].Cells[2].Value.ToString();
-                      
-                    
-                    狀態.Text = dataGridView1.SelectedRows[0].Cells[4].Value.ToString();
+                        狀態.Text = dataGridView1.SelectedRows[0].Cells[4].Value.ToString();
                         時間.Text = DateTime.Parse(dataGridView1.SelectedRows[0].Cells[5].Value.ToString()).ToString("yyyy/MM/dd");
                        
 
@@ -74,11 +71,21 @@ namespace _52屆winform
         }
 
         private void reloading() {
+            if (C_SQLServerLib.perID == "3")
+            {
+                dataGridView1.DataSource = lib.GetDataSet($"select 明細號,IMO,航線名稱,港口名稱,狀態,時間 from 航行明細 " +
+             $"inner join 航行資料 on 航行明細.航行ID=航行資料.航行ID " +
+             $"inner join 港口清單 on 航行明細.港口ID=港口清單.港口ID " +
+             $"inner join 航線名稱 on 航行明細.航線ID=航線名稱.航線ID where IMO={C_SQLServerLib.IMO}", "航行明細").Tables["航行明細"];
+            }
+            else {
+                dataGridView1.DataSource = lib.GetDataSet($"select 明細號,IMO,航線名稱,港口名稱,狀態,時間 from 航行明細 " +
+                $"inner join 航行資料 on 航行明細.航行ID=航行資料.航行ID " +
+                $"inner join 港口清單 on 航行明細.港口ID=港口清單.港口ID " +
+                $"inner join 航線名稱 on 航行明細.航線ID=航線名稱.航線ID ", "航行明細").Tables["航行明細"];
 
-            dataGridView1.DataSource = lib.GetDataSet($"select 明細號,IMO,航線名稱,港口名稱,狀態,時間 from 航行明細 " +
-               $"inner join 航行資料 on 航行明細.航行ID=航行資料.航行ID " +
-               $"inner join 港口清單 on 航行明細.港口ID=港口清單.港口ID " +
-               $"inner join 航線名稱 on 航行明細.航線ID=航線名稱.航線ID", "航行明細").Tables["航行明細"];
+            }
+          
 
 
         }

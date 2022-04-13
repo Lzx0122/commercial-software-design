@@ -77,11 +77,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UserControl_Ship_equipment.cs">
+    <Compile Include="UserControl_船舶設備維護管理.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControl_Ship_equipment.Designer.cs">
-      <DependentUpon>UserControl_Ship_equipment.cs</DependentUpon>
+    <Compile Include="UserControl_船舶設備維護管理.Designer.cs">
+      <DependentUpon>UserControl_船舶設備維護管理.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControl_Ship_navigation_inspection.cs">
       <SubType>UserControl</SubType>
@@ -138,8 +138,8 @@
     <EmbeddedResource Include="UserControl_shipping_manage .resx">
       <DependentUpon>UserControl_shipping_manage .cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControl_Ship_equipment.resx">
-      <DependentUpon>UserControl_Ship_equipment.cs</DependentUpon>
+    <EmbeddedResource Include="UserControl_船舶設備維護管理.resx">
+      <DependentUpon>UserControl_船舶設備維護管理.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControl_Ship_navigation_inspection.resx">
       <DependentUpon>UserControl_Ship_navigation_inspection.cs</DependentUpon>
