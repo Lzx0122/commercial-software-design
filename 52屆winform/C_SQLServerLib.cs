@@ -123,17 +123,25 @@ namespace _52屆winform
 
 
         public string GetSQLvalue(string strSql,string strTableName) {
-            SqlDataReader connReader;
-            cmd = new SqlCommand();
-            openConn();
-            cmd.CommandText = strSql;
-            cmd.Connection = conn;
-            connReader = cmd.ExecuteReader();
-            if (connReader.Read())
+            try
             {
-                return connReader[strTableName].ToString();
+                SqlDataReader connReader;
+                cmd = new SqlCommand();
+                openConn();
+                cmd.CommandText = strSql;
+                cmd.Connection = conn;
+                connReader = cmd.ExecuteReader();
+                if (connReader.Read())
+                {
+                    return connReader[strTableName].ToString();
+                }
+                return null;
             }
-            return null;
+            catch (Exception ex) {
+
+                return null;
+            }
+           
         }
 
         public bool startExecuteNonQuery(string sql) {

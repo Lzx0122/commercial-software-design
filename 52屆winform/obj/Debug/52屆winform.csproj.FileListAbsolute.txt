@@ -41,3 +41,7 @@ C:\Users\user\Desktop\52屆\52屆winform\commercial-software-design\52屆winform
 C:\Users\user\Desktop\52屆\52屆winform\commercial-software-design\52屆winform\obj\Debug\_52屆winform.UserControl1.resources
 C:\Users\user\Desktop\52屆\52屆winform\commercial-software-design\52屆winform\obj\Debug\_52屆winform.UserControl_Ship_equipment.resources
 C:\Users\user\Desktop\52屆\52屆winform\commercial-software-design\52屆winform\obj\Debug\_52屆winform.UserControl_Ship_navigation_inspection.resources
+D:\52屆 商業軟體設計\commercial-software-design-main\52屆winform\obj\Debug\_52屆winform.UserControl_API.resources
+D:\52屆 商業軟體設計\commercial-software-design-main\52屆winform\obj\Debug\_52屆winform.UserControl1.resources
+D:\52屆 商業軟體設計\commercial-software-design-main\52屆winform\obj\Debug\_52屆winform.UserControl_Ship_equipment.resources
+D:\52屆 商業軟體設計\commercial-software-design-main\52屆winform\obj\Debug\_52屆winform.UserControl_Ship_navigation_inspection.resources

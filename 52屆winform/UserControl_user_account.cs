@@ -36,11 +36,11 @@ namespace _52屆winform
             comboBox1.DataSource = lib.GetDataTable("select 權限說明 from 權限");
             comboBox1.DisplayMember = "權限";
             comboBox1.ValueMember = "權限說明";
-            MessageBox.Show(comboBox1.SelectedValue.ToString());
+    
             comboBox2.DataSource = lib.GetDataTable("select * from 職業 where { fn LENGTH(職業ID) } = 7");
             comboBox2.DisplayMember = "職業";
             comboBox2.ValueMember = "職業ID";
-            MessageBox.Show(comboBox2.SelectedValue.ToString());
+           
 
             comboBox3.DataSource = lib.GetDataTable("select IMO from 船舶基本資料");
             comboBox3.DisplayMember = "IMO";
