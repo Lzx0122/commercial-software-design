@@ -15,7 +15,7 @@ namespace _52屆winform
         void  connfun()
         {
 
-            string connStr = "Data Source=192.168.104,1433;database=GSMS_X;User ID=sa;password=0000";
+            string connStr = "Data Source=192.168.0.104,1433;database=GSMS_X;User ID=sa;password=0000";
             conn = new SqlConnection(connStr);
 
 

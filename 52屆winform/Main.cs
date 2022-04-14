@@ -68,6 +68,11 @@ namespace _52屆winform
                     userControls[i] = new UserControl_船舶設備維護管理(lib);
                     userControls[i].Name = "UserControl_船舶設備維護管理";
                 }
+                else if (perArrayList[i].Equals("船舶設備管理維修"))
+                {
+                    userControls[i] = new UserControl_船舶設備管理維修(lib);
+                    userControls[i].Name = "UserControl_船舶設備管理維修";
+                }
 
                 userControls[i].Location = new System.Drawing.Point(6, 5);
                 tabPages[i].Controls.Add(userControls[i]);
@@ -81,11 +86,6 @@ namespace _52屆winform
                 tabPages[i].SuspendLayout();
                 tabPages[i].ResumeLayout(false);
                 this.tabControl1.Controls.Add(tabPages[i]);
-           
-
-
-
-
             }
         
         

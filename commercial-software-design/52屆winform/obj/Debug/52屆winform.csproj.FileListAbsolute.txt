@@ -1,0 +1,48 @@
+C:\Users\user\Desktop\52屆\52屆winform\52屆winform\bin\Debug\52屆winform.exe.config
+C:\Users\user\Desktop\52屆\52屆winform\52屆winform\bin\Debug\52屆winform.exe
+C:\Users\user\Desktop\52屆\52屆winform\52屆winform\bin\Debug\52屆winform.pdb
+C:\Users\user\Desktop\52屆\52屆winform\52屆winform\obj\Debug\52屆winform.csproj.AssemblyReference.cache
+C:\Users\user\Desktop\52屆\52屆winform\52屆winform\obj\Debug\_52屆winform.Properties.Resources.resources
+C:\Users\user\Desktop\52屆\52屆winform\52屆winform\obj\Debug\52屆winform.csproj.GenerateResource.cache
+C:\Users\user\Desktop\52屆\52屆winform\52屆winform\obj\Debug\52屆winform.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\52屆\52屆winform\52屆winform\obj\Debug\52屆winform.exe
+C:\Users\user\Desktop\52屆\52屆winform\52屆winform\obj\Debug\52屆winform.pdb
+C:\Users\user\Desktop\52屆\52屆winform\52屆winform\obj\Debug\_52屆winform.Login.resources
+C:\Users\user\Desktop\52屆\52屆winform\52屆winform\obj\Debug\_52屆winform.UserControl_ChangePassword.resources
+C:\Users\user\Desktop\52屆\52屆winform\52屆winform\obj\Debug\_52屆winform.Main.resources
+C:\Users\user\Desktop\52屆\52屆winform\commercial-software-design\52屆winform\bin\Debug\52屆winform.exe.config
+C:\Users\user\Desktop\52屆\52屆winform\commercial-software-design\52屆winform\bin\Debug\52屆winform.exe
+C:\Users\user\Desktop\52屆\52屆winform\commercial-software-design\52屆winform\bin\Debug\52屆winform.pdb
+C:\Users\user\Desktop\52屆\52屆winform\commercial-software-design\52屆winform\obj\Debug\52屆winform.csproj.AssemblyReference.cache
+C:\Users\user\Desktop\52屆\52屆winform\commercial-software-design\52屆winform\obj\Debug\52屆winform.csproj.SuggestedBindingRedirects.cache
+C:\Users\user\Desktop\52屆\52屆winform\commercial-software-design\52屆winform\obj\Debug\_52屆winform.Main.resources
+C:\Users\user\Desktop\52屆\52屆winform\commercial-software-design\52屆winform\obj\Debug\_52屆winform.Login.resources
+C:\Users\user\Desktop\52屆\52屆winform\commercial-software-design\52屆winform\obj\Debug\_52屆winform.Properties.Resources.resources
+C:\Users\user\Desktop\52屆\52屆winform\commercial-software-design\52屆winform\obj\Debug\_52屆winform.UserControl_ChangePassword.resources
+C:\Users\user\Desktop\52屆\52屆winform\commercial-software-design\52屆winform\obj\Debug\52屆winform.csproj.GenerateResource.cache
+C:\Users\user\Desktop\52屆\52屆winform\commercial-software-design\52屆winform\obj\Debug\52屆winform.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\52屆\52屆winform\commercial-software-design\52屆winform\obj\Debug\52屆winform.exe
+C:\Users\user\Desktop\52屆\52屆winform\commercial-software-design\52屆winform\obj\Debug\52屆winform.pdb
+C:\Users\user\Desktop\52屆\52屆winform\commercial-software-design\52屆winform\obj\Debug\_52屆winform.UserControl_user_account.resources
+D:\52屆 商業軟體設計\commercial-software-design-main\52屆winform\bin\Debug\52屆winform.exe.config
+D:\52屆 商業軟體設計\commercial-software-design-main\52屆winform\bin\Debug\52屆winform.exe
+D:\52屆 商業軟體設計\commercial-software-design-main\52屆winform\bin\Debug\52屆winform.pdb
+D:\52屆 商業軟體設計\commercial-software-design-main\52屆winform\obj\Debug\52屆winform.csprojAssemblyReference.cache
+D:\52屆 商業軟體設計\commercial-software-design-main\52屆winform\obj\Debug\_52屆winform.Main.resources
+D:\52屆 商業軟體設計\commercial-software-design-main\52屆winform\obj\Debug\_52屆winform.Login.resources
+D:\52屆 商業軟體設計\commercial-software-design-main\52屆winform\obj\Debug\_52屆winform.Properties.Resources.resources
+D:\52屆 商業軟體設計\commercial-software-design-main\52屆winform\obj\Debug\_52屆winform.UserControl_ChangePassword.resources
+D:\52屆 商業軟體設計\commercial-software-design-main\52屆winform\obj\Debug\_52屆winform.UserControl_user_account.resources
+D:\52屆 商業軟體設計\commercial-software-design-main\52屆winform\obj\Debug\52屆winform.csproj.GenerateResource.cache
+D:\52屆 商業軟體設計\commercial-software-design-main\52屆winform\obj\Debug\52屆winform.csproj.CoreCompileInputs.cache
+D:\52屆 商業軟體設計\commercial-software-design-main\52屆winform\obj\Debug\52屆winform.exe
+D:\52屆 商業軟體設計\commercial-software-design-main\52屆winform\obj\Debug\52屆winform.pdb
+C:\Users\user\Desktop\52屆\52屆winform\commercial-software-design\52屆winform\obj\Debug\_52屆winform.UserControl_API.resources
+C:\Users\user\Desktop\52屆\52屆winform\commercial-software-design\52屆winform\obj\Debug\_52屆winform.UserControl1.resources
+C:\Users\user\Desktop\52屆\52屆winform\commercial-software-design\52屆winform\obj\Debug\_52屆winform.UserControl_Ship_navigation_inspection.resources
+D:\52屆 商業軟體設計\commercial-software-design-main\52屆winform\obj\Debug\_52屆winform.UserControl_API.resources
+D:\52屆 商業軟體設計\commercial-software-design-main\52屆winform\obj\Debug\_52屆winform.UserControl1.resources
+D:\52屆 商業軟體設計\commercial-software-design-main\52屆winform\obj\Debug\_52屆winform.UserControl_Ship_navigation_inspection.resources
+C:\Users\user\Desktop\52屆\52屆winform\commercial-software-design\52屆winform\obj\Debug\_52屆winform.UserControl_船舶設備維護管理.resources
+D:\52屆 商業軟體設計\commercial-software-design-main\52屆winform\obj\Debug\_52屆winform.UserControl_船舶設備維護管理.resources
+D:\52屆 商業軟體設計\commercial-software-design-main\52屆winform\obj\Debug\_52屆winform.UserControl_船舶設備管理維修.resources

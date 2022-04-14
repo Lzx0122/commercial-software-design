@@ -112,8 +112,7 @@ namespace _52屆winform
             
             if (result == System.Windows.Forms.DialogResult.Yes)
             {
-                if (isNull == null) {
-              
+                if (isNull == null) {             
                     sql = $"insert into 船員資料 (使用者ID,密碼,姓名,國家,出生日期,職業ID,狀態,IMO,權限ID) " +
                         $"select '{textBox1.Text}','{textBox2.Text}','{textBox3.Text}','{textBox4.Text}','{textBox7.Text}'" +
                         $",'{comboBox2.SelectedValue.ToString()}','{textBox5.Text}','{comboBox3.Text}'," +
@@ -121,15 +120,12 @@ namespace _52屆winform
                     if (lib.startExecuteNonQuery(sql)) {
                         reloading();
                         MessageBox.Show("修改完成", "訊息");
-
                     }
                   
                 }
                 else {
                     MessageBox.Show($"{textBox1.Text}此使用者已被註冊","錯誤");
                 } 
-                  
-               
             }
 
         }
@@ -156,8 +152,6 @@ namespace _52屆winform
             dataGridView1.DataSource = lib.GetDataSet("select 使用者ID,密碼,姓名,國家,出生日期,職業,狀態,IMO,權限說明  from 船員資料" +
 " inner join 權限 on 船員資料.權限ID = 權限.權限ID" +
 " inner join 職業 on 船員資料.職業ID = 職業.職業ID ", "船員資料").Tables["船員資料"];
-            
-
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -181,11 +175,8 @@ namespace _52屆winform
                         MessageBox.Show($"修改成功");
                         reloading();
                     }
-                   
-
                 }
                 else {
-
                     MessageBox.Show($"資料表裡面沒有'{textBox1.Text}'使用者");
                 }
                
@@ -211,9 +202,6 @@ $"or 狀態 like '%{textBox6.Text}%'" +
 $"or IMO like '%{textBox6.Text}%'" +
 $"or 權限說明 like '%{textBox6.Text}%'"
 , "船員資料").Tables["船員資料"];
-
-
-
         }
 
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
