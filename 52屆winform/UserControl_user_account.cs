@@ -64,7 +64,6 @@ namespace _52屆winform
                         str = dataGridView1.SelectedRows[0].Cells[7].Value.ToString();
                         index = comboBox3.FindString(str);
                         comboBox3.SelectedIndex = index;
-
                         textBox1.Text = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
                         textBox2.Text = dataGridView1.SelectedRows[0].Cells[1].Value.ToString();
                         textBox3.Text = dataGridView1.SelectedRows[0].Cells[2].Value.ToString();

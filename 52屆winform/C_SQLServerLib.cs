@@ -27,8 +27,7 @@ namespace _52屆winform
             bool isvLogin = vUserLoginFun();
             if (isvLogin) {
                 MessageBox.Show($"登入成功\n使用者:{UserName}\nIMO:{IMO}\n權限:{per}");
-                Main main = new Main(this);
-               
+                Main main = new Main(this);              
                 main.Show();
                 return true;
             }
@@ -52,7 +51,7 @@ namespace _52屆winform
                     return true;
                 }
             }
-            catch (Exception ex) {
+            catch {
                 return false;
             }
             return false;
