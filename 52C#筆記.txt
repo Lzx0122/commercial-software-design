@@ -1,0 +1,20 @@
+Login開始建構lib 後面開始一直傳lib
+
+Sql Adapter內需要放cmd參數
+
+利用 cmd.ExecuteNonQuery();對sql 下指令
+
+UserControls tab建置:
+Main 先建置  TabPage[] tabPages; 和   UserControl[] userControls; 在main_load分別new per拆解長度 tabPages = new TabPage[perArrayList.Length]; and userControls= new UserControl[perArrayList.Length];
+
+把tabpage[i] 初始化 tabpage //  tabPages[i] = new TabPage();
+UserControls[i] 初始化對應的 Controls  //userControls[i] = new 帳號管理(lib);
+TabPage裡面的controls新增UserControls [i]    // tabPages[i].Controls.Add(userControls[i]);
+對Tabpage[i]標籤命名   //tabPages[i].Text = perArrayList[i].ToString();
+將tabControl1 物件加入剛剛設定完的tabPages // this.tabControl1.Controls.Add(tabPages[i]);
+
+sql 語法:
+新增 (insert into 表格 (欄位名稱,欄位名稱) select 值,值)
+刪除 (delete from 表格 where 條件)
+修改 (update 表格 set 欄位名稱=值,欄位名稱=值 where 條件)
+查詢 (select 欄位 from 表格A inner join 表格B on 表格A.key = 表格B.key  where 欄位名稱=條件 ) 
